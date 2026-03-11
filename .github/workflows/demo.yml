@@ -1,6 +1,5 @@
 name: Workflow Manual de Identificación
 
-
 on:
   workflow_dispatch:
     inputs:
