@@ -1,0 +1,17 @@
+name: Workflow Manual de Identificación
+
+
+on:
+  workflow_dispatch:
+    inputs:
+      mensaje_usuario:
+        description: 'Introduce un mensaje de texto'
+        required: true
+        default: 'Hola desde mi primer GitHub Actions en la práctica de Pontia'
+
+jobs:
+  imprimir-mensaje:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir mensaje por consola
+        run: echo "El mensaje recibido es: ${{ github.event.inputs.mensaje_usuario }}"
