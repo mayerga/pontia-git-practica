@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Imprimir mensaje por consola
-        run: echo "El mensaje recibido es: ${{ github.event.inputs.mensaje_usuario }}"
+        run: echo "El mensaje recibido es: ${{github.event.inputs.mensaje_usuario}}"
